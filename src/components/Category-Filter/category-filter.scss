@@ -1,0 +1,27 @@
+@use "../../assests/sass" as *;
+
+.sidebar .categories-list {
+  height: 0;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: hsl(227deg 41% 29% / 65%);
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: $main-color;
+  }
+
+  &.open {
+    height: calc(100vh - 25.6rem);
+    overflow-y: auto;
+  }
+}

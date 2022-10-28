@@ -1,0 +1,21 @@
+@media (max-width: 52rem) {
+  .products {
+    margin-top: 6.25rem;
+
+    .search {
+      padding-inline: 0;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 35rem) {
+  .products {
+    padding: 2rem 1rem;
+
+    .products-grid {
+      grid-template-columns: 1fr;
+      padding-inline: 0;
+    }
+  }
+}

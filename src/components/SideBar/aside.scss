@@ -1,0 +1,43 @@
+@use "../../assests/sass" as *;
+
+.sidebar {
+  width: 18rem;
+  min-width: 18rem;
+  min-height: calc(100vh - 100.5px);
+  border-right: 1px solid $main-border-color;
+  transition: 0.5s ease-in;
+  overflow-x: hidden;
+  background-color: white;
+
+  &.closed {
+    width: 0;
+    min-width: 0;
+  }
+
+  .filter-section {
+    padding: $tewenty-p;
+    border-bottom: 1px solid $main-border-color;
+  }
+
+  .categories {
+    padding-bottom: 0;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding-bottom: $tewenty-p;
+
+      img {
+        max-width: 1.8rem;
+        transform: rotate(0);
+        transition: 0.3s ease;
+
+        &.rotate {
+          transform: rotate(-0.5turn);
+        }
+      }
+    }
+  }
+}

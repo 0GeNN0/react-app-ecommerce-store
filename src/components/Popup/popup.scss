@@ -1,0 +1,102 @@
+@use "../../assests/sass" as *;
+
+.portal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  transform: scale(0);
+  transform-origin: center center;
+  transition: transform 0.3s ease-out;
+
+  &.open {
+    transform: scale(1);
+
+    .pop-up {
+      translate: 0 50%;
+    }
+  }
+}
+
+.portal .pop-up {
+  max-width: 37.5rem;
+  height: max-content;
+  border-radius: $ten-p;
+  background-color: white;
+  padding: $tewenty-p;
+  translate: 0 -150%;
+  transition: translate 0.3s 0.3s ease-out;
+  margin-inline: $tewenty-p;
+
+  .heading-message {
+    text-align: center;
+    padding: $tewenty-p;
+    margin-bottom: $thirty-p;
+
+    h2 {
+      margin-bottom: $tewenty-p;
+    }
+  }
+
+  .spinner {
+    padding: $tewenty-five-p;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+      width: 6.25rem;
+      height: 6.25rem;
+      border-radius: 50%;
+      border: 5px solid darkred;
+      border-bottom-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: spinner 1s linear infinite forwards;
+
+      .inner-circle {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 5px solid darkred;
+        border-top-color: transparent;
+        animation: spinner 0.5s linear infinite reverse;
+      }
+    }
+
+    .signs {
+      font-size: 2rem;
+    }
+  }
+
+  .btn {
+    text-align: center;
+
+    .done {
+      width: 100%;
+      padding: $ten-p;
+      border: none;
+      border-radius: 6px;
+      background-color: darkred;
+      color: white;
+      margin-top: $fifty-p;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+
+      font: {
+        size: 1rem;
+        weight: bold;
+      }
+
+      &:disabled {
+        background-color: rgba(139, 0, 0, 0.459);
+        cursor: not-allowed;
+      }
+    }
+  }
+}

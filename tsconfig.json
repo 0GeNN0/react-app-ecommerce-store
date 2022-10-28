@@ -18,9 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitThis": false,
   },
   "include": [
-    "src"
+    "src",
+    "images.d.ts"
   ]
 }

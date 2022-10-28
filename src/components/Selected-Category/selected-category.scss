@@ -1,0 +1,22 @@
+@use "../../assests/sass" as *;
+
+.selected-category {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  gap: 10px;
+  background-color: $secondary-color;
+  color: $main-color;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+  height: 1.7rem;
+
+  .img {
+    cursor: pointer;
+    height: 1.5rem;
+
+    img {
+      height: 100%;
+    }
+  }
+}

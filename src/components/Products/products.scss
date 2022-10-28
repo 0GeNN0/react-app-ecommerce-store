@@ -1,0 +1,58 @@
+@use "../../assests/sass" as *;
+
+.products {
+  flex-grow: 1;
+  padding: 2.5rem;
+  transition: 0.5s ease-in;
+  position: relative;
+
+  .filter-icon {
+    position: absolute;
+    right: calc(100% + 1px);
+    transform: translateX(100%);
+    top: 9rem;
+    height: 2.5rem;
+    border: 1px solid $main-border-color;
+    border-left-color: white;
+    border-radius: 0 0.4rem 0.4rem 0;
+    cursor: pointer;
+  }
+
+  .search {
+    padding-inline: $tewenty-p;
+    max-width: 25rem;
+
+    input {
+      padding: 1.25rem;
+      border-radius: 5px;
+      border: 1px solid $main-border-color;
+      width: 100%;
+      outline: none;
+      transition: box-shadow 0.3s ease-in;
+
+      &:focus {
+        box-shadow: 0 0 $tewenty-p $main-border-color;
+        border: none;
+      }
+    }
+  }
+
+  .selected-categories {
+    padding: $tewenty-p;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .products-grid {
+    padding-inline: $tewenty-p;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 2rem;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

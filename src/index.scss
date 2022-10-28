@@ -1,0 +1,13 @@
+@use "./assests/sass" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Ubuntu-Regular;
+  color: $secondary-color;
+  min-height: 100vh;
+}

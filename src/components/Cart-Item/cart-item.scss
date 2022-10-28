@@ -1,0 +1,75 @@
+@use "../../assests/sass" as *;
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: $ten-p;
+  padding: 1rem;
+  background-color: $main-color;
+  border-radius: 6px;
+
+  &:not(:last-child) {
+    margin-bottom: $ten-p;
+  }
+
+  .remove {
+    max-width: $tewenty-p;
+    cursor: pointer;
+  }
+
+  .product-img {
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: cover;
+  }
+}
+
+.cart-item .price-actions {
+  margin-left: auto;
+
+  .price {
+    small {
+      opacity: 0.5;
+      margin-right: $ten-p;
+    }
+
+    b {
+      font-size: 1.125rem;
+    }
+  }
+
+  .btns {
+    margin-top: $ten-p;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+    > span {
+      padding: $ten-p;
+      border-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      &:not(.num) {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 30rem) {
+  .cart-item {
+    flex-direction: column;
+    gap: $tewenty-p;
+
+    .remove {
+      order: 3;
+    }
+
+    .price-actions {
+      margin: 0;
+    }
+  }
+}

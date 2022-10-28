@@ -1,0 +1,63 @@
+@use "../../assests/sass" as *;
+
+.sidebar .price {
+  .heading {
+    margin-bottom: $tewenty-p;
+  }
+
+  .control-price-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $tewenty-p;
+
+    input {
+      position: relative;
+    }
+
+    input[type="number"] {
+      border: 2px solid $secondary-color;
+      border-radius: 5px;
+      outline: none;
+      text-align: center;
+      color: $secondary-color;
+      padding: 1rem 0.5rem;
+      font: {
+        weight: bold;
+        size: 1rem;
+      }
+      margin-left: $ten-p;
+      // To remove the arrows from the input
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+      }
+    }
+
+    .actions-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.625rem;
+
+      .btn {
+        background-color: $secondary-color;
+        color: $main-color;
+        border: none;
+        border-radius: 7px;
+        font: {
+          family: inherit;
+          size: 1.01rem;
+        }
+        padding: 0.3rem 0.5rem;
+        cursor: pointer;
+
+        &.on-submit {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

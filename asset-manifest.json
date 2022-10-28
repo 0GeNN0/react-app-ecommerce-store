@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-app-ecommerce-store/static/css/main.f213d67c.css",
+    "main.js": "/react-app-ecommerce-store/static/js/main.646bbf5e.js",
+    "static/media/Ubuntu-Regular.ttf": "/react-app-ecommerce-store/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/react-app-ecommerce-store/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/logo.svg": "/react-app-ecommerce-store/static/media/logo.863346d8c2d95d838689a8348cb6fbcf.svg",
+    "static/media/trash.svg": "/react-app-ecommerce-store/static/media/trash.579b6a522f5977991f33e18e50cf4840.svg",
+    "static/media/empty-cart.svg": "/react-app-ecommerce-store/static/media/empty-cart.72501840c90247212b38d257f3c98fa3.svg",
+    "static/media/filled-cart.svg": "/react-app-ecommerce-store/static/media/filled-cart.8eba5cfa2beb7aa66bd86bd2b8ca54a9.svg",
+    "static/media/empty-star.svg": "/react-app-ecommerce-store/static/media/empty-star.72ea5c7b65c288438d96de9efe2f88b8.svg",
+    "static/media/up-arrow.svg": "/react-app-ecommerce-store/static/media/up-arrow.3a0a03b312f19b44a8e2913a56abda52.svg",
+    "static/media/filled-star.svg": "/react-app-ecommerce-store/static/media/filled-star.fb2c08ecf801bc85f1af15e01c44c038.svg",
+    "static/media/x.svg": "/react-app-ecommerce-store/static/media/x.dabfde86c15cb64db9c9f05f10ac1c52.svg",
+    "index.html": "/react-app-ecommerce-store/index.html",
+    "static/media/filter.svg": "/react-app-ecommerce-store/static/media/filter.86a0ed57ae589b54ae95d7dc089fe5f0.svg",
+    "static/media/icon-plus.svg": "/react-app-ecommerce-store/static/media/icon-plus.a2129d6629558b8ed88032e636f8df11.svg",
+    "static/media/icon-minus.svg": "/react-app-ecommerce-store/static/media/icon-minus.e2b987988275ef2828593d64a7d66985.svg",
+    "main.f213d67c.css.map": "/react-app-ecommerce-store/static/css/main.f213d67c.css.map",
+    "main.646bbf5e.js.map": "/react-app-ecommerce-store/static/js/main.646bbf5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f213d67c.css",
+    "static/js/main.646bbf5e.js"
+  ]
+}

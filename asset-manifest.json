@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app-ecommerce-store/static/css/main.f213d67c.css",
-    "main.js": "/react-app-ecommerce-store/static/js/main.646bbf5e.js",
+    "main.js": "/react-app-ecommerce-store/static/js/main.b4f63de7.js",
     "static/media/Ubuntu-Regular.ttf": "/react-app-ecommerce-store/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
     "static/media/Ubuntu-Bold.ttf": "/react-app-ecommerce-store/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
     "static/media/logo.svg": "/react-app-ecommerce-store/static/media/logo.863346d8c2d95d838689a8348cb6fbcf.svg",
@@ -17,10 +17,10 @@
     "static/media/icon-plus.svg": "/react-app-ecommerce-store/static/media/icon-plus.a2129d6629558b8ed88032e636f8df11.svg",
     "static/media/icon-minus.svg": "/react-app-ecommerce-store/static/media/icon-minus.e2b987988275ef2828593d64a7d66985.svg",
     "main.f213d67c.css.map": "/react-app-ecommerce-store/static/css/main.f213d67c.css.map",
-    "main.646bbf5e.js.map": "/react-app-ecommerce-store/static/js/main.646bbf5e.js.map"
+    "main.b4f63de7.js.map": "/react-app-ecommerce-store/static/js/main.b4f63de7.js.map"
   },
   "entrypoints": [
     "static/css/main.f213d67c.css",
-    "static/js/main.646bbf5e.js"
+    "static/js/main.b4f63de7.js"
   ]
 }

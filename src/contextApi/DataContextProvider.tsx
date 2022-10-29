@@ -20,10 +20,14 @@ export const DataContext = createContext({} as DataContextValueType);
 function DataContextProvider({ children }: DataContextProviderTypes) {
   const [state, dispatch] = useReducer(
     dataReducer,
-    JSON.parse(localStorage.getItem("state") || `${initState}`) as initStateType
+    JSON.parse(
+      localStorage.getItem("state") || JSON.stringify(initState)
+    ) as initStateType
   );
   const [inCart, setInCart] = useState(
-    JSON.parse(localStorage.getItem("inCart") || "[]") as ProductInCart[]
+    JSON.parse(
+      localStorage.getItem("inCart") || JSON.stringify([])
+    ) as ProductInCart[]
   );
   const [categories, setCategories] = useState([] as CategoryType[]);
   const [searchText, setSearchText] = useState("");

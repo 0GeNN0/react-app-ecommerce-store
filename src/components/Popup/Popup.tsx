@@ -42,7 +42,7 @@ function Popup({ isModalOpen, toggleModal, isSpinning }: PopupProps) {
         </button>
       </div>
     </div>,
-    protalElement
+    document.body
   );
 }
 

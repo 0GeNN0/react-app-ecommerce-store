@@ -1,5 +1,4 @@
 // Libs
-import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
 // Types
@@ -8,17 +7,11 @@ import { PopupProps } from "./popup.types";
 // Styles
 import "./popup.scss";
 
-const protalElement = document.getElementById("portal") as HTMLDivElement;
-
 function Popup({ isModalOpen, toggleModal, isSpinning }: PopupProps) {
-  useEffect(() => {
-    isModalOpen
-      ? protalElement.classList.add("open")
-      : protalElement.classList.remove("open");
-  }, [isModalOpen]);
+  const toggleClass = isModalOpen ? 'open' : '';
 
   return createPortal(
-    <div className='modal'>
+    <div className={`modal ${toggleClass}`}>
       <div className="pop-up">
         <div className="heading-message">
           <h2>
